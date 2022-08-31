@@ -8,7 +8,8 @@
   <link rel="shortcut icon" type="image/x-icon" th:href="@{/assets/icons/favi.png}">
 </head>
 <body>
-index page
+index page<br>
 <span sec:authentication="name">님 반갑습니다.</span>
+<span th:text="${#authentication.getAuthorities()}"></span>
 </body>
 </html>
